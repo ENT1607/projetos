@@ -1,0 +1,37 @@
+.foto {
+    border: 5px solid rgb(0, 89, 255);
+    border-radius: 100%;
+    width: 200px;
+}
+
+body {
+background-image: linear-gradient(to left, rgba(83, 83, 83, 0.856), rgb(4, 29, 255));
+text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu {
+    background-color: rgb(19, 19, 19);
+    border-radius: 30px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: blue;
+    font-size: 20px;
+    border-radius: 15px;
+    transition-duration: 1s;
+}

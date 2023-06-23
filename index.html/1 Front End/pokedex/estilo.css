@@ -1,0 +1,87 @@
+.tabela {
+border: 20px;
+height: 600px;
+background-color: rgb(9, 152, 241);
+border-radius: 10px;
+margin: auto;
+width: 600px;
+background-size: cover;
+}
+
+.pesq {
+color: rgb(0, 0, 0);
+background-color: rgb(255, 251, 0);
+border-radius: 10px;
+border-color: rgb(255, 217, 0);
+height: 25px;
+}
+
+.prox {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 251, 0);
+    border-radius: 10px;
+    border-color: rgb(255, 217, 0);
+    height: 25px;
+}
+
+.ant {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 251, 0);
+    border-radius: 10px;
+    border-color: rgb(255, 217, 0);
+    height: 25px;
+
+}
+
+body{
+    background-image: url(https://wallpapercrafter.com/th800/337124-Video-Game-Pokmon-Sword-and-Shield-Phone-Wallpaper.png);
+    text-align: center;
+    background-size: cover;
+}
+
+h1 {
+    color: rgba(0, 0, 0, 0.795);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.barra {
+    border-radius: 10px;
+    border-color: rgb(255, 217, 0);
+    background-color: rgb(236, 236, 234);
+    height: 20px;
+}
+
+#tela {
+    margin: auto;
+    background-color: rgb(190, 179, 179);
+    border: 15px solid rgb(219, 214, 214);
+    width: 300px;
+    height: 280px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-image: url(https://i.pinimg.com/736x/39/3c/e6/393ce636c6ceac0b15ad4c454f247d60.jpg);
+    background-size: cover;
+    animation: carregar 10s alternate;
+}
+
+@keyframes carregar{
+    0%{
+        height: 0;
+    }
+    100%{
+
+    }
+}
+
+p{
+    background-color: rgba(169, 169, 169, 0.529);
+    width: 250px;
+    margin: auto;
+}
+
+h2{
+    background-color: rgba(169, 169, 169, 0.528);
+    width: 250px;
+    margin: 40px auto;
+    border-radius: 10px;
+}
