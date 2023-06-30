@@ -1,0 +1,37 @@
+.tabelatitulo{
+    color: aliceblue;
+}
+.tabela{
+   
+    background-color: rgb(255, 174, 0);
+    width: 600px;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    text-align: center;
+}
+
+.tabela tr td {
+    border: 2px solid black;
+}
+.titulo{
+    color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto{
+    color: rgb(0, 0, 0);
+}
+.foto{
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.856), rgb(251, 255, 0));
+    text-align: center;
+    width: 600px;
+}
+
+body{
+    background-color: rgb(255, 230, 0);
+   text-align: center;
+}
+ul {
+    list-style: none;
+}

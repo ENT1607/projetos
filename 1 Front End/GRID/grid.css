@@ -1,0 +1,33 @@
+.item {
+    background-color:rgba(185, 182, 132, 0.587)  ;
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+    border: 5px solid;
+    border-radius: 15px;
+    font-family:monospace;
+}
+
+.coluna {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.linha {
+    grid-template-rows: 100px 200px 200px 200px;
+}
+
+body {
+    background-color: rgba(100, 103, 77, 0.782);
+    text-align: center;
+}
+.titulo {
+    background-color: rgba(185, 182, 132, 0.587) ;
+    color: rgba(0, 0, 0, 0.989);
+    border: 5px solid;
+    border-radius: 15px;
+}
+h4 {
+    color: rgb(0, 0, 0);
+}

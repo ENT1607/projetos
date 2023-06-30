@@ -1,0 +1,76 @@
+body {
+    background-image: url(https://besthqwallpapers.com/Uploads/28-8-2016/5567/landscape-winter-nature-trees-snow.jpg);
+    background-size: cover;
+}
+
+.botao{
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(220, 213, 213);
+    height: 30px;
+    animation: cor 10s alternate infinite;
+}
+
+.painel{
+    border: 10px;
+    border-radius: 20px;
+    height: 700px;
+    background-color: #6c82b0b2;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid rgb(38, 108, 212);
+    animation: piscar 2s alternate infinite;
+}
+@keyframes piscar {
+    0%{
+        box-shadow: -10px 15px 25px rgb(38, 108, 212);
+    }
+    100%{
+        box-shadow: 15px -10px 25px rgb(38, 108, 212);
+    }
+}
+
+.titulo{
+    color:rgb(255, 255, 255);
+}
+
+.pesquisa{
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+}
+
+.cit{
+    color: aliceblue;
+}
+
+.img{
+    animation: voltar 4s alternate infinite;
+}
+@keyframes voltar {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(-100px);
+    }
+}
+@keyframes cor {
+    0% {
+        background-color: #1f231b;
+    }
+    25% {
+        background-color: #9197c2;
+    }
+    50% {
+        background-color: #637492;
+    }
+    75% {
+        background-color: #b39692;
+    }
+    100% {
+        background-color: #747474;
+    }
+}

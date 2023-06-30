@@ -1,0 +1,42 @@
+.painel{
+    border: 1px solid rgb(0, 0, 0);
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 20px;
+    font-family: cursive;
+    background-color:rgba(255, 255, 255, 0.075) ;
+}
+
+input {
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+    text-align: center;
+}
+
+#resultado{
+    font-size: 50px;
+    color:aquamarine;
+    font-weight: bold;
+}
+
+body {
+    background-image: linear-gradient(to left, rgba(26, 155, 191, 0.765), rgba(64, 255, 0, 0.733));
+}
+
+.botao {
+    background-image: linear-gradient(to left, rgba(26, 155, 191, 0.765), rgba(64, 255, 0, 0.733));
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    color: aliceblue;
+}
+
+p {
+    color: aliceblue;
+}

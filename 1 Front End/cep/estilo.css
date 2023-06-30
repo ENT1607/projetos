@@ -1,0 +1,39 @@
+.botao {
+    color:aliceblue;
+    border: 10px;
+    border-radius: 70px;
+    background-color: coral;
+    width: 70px;
+    font-size: 15px;
+    height: 30px;
+}
+
+.painel {
+    border:10px;
+    border-radius: 20px;
+    background-color:rgb(255, 255, 255);
+    height: 400px;
+    margin:auto;
+    width: 500px;
+    padding-left: 40px;
+    padding-top: 3px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       
+}
+
+body {
+    background-color:coral;
+}
+
+.cep {
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    height: 30px;
+    border-color: coral;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tit {
+    color: black;
+}

@@ -1,0 +1,36 @@
+body {
+    background-image: url(https://www.kanguruinfo.com.br/wp-content/uploads/2018/04/Background-dia-das-maes.jpg);
+    background-size:cover;
+}
+
+.painel{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(179, 130, 175, 0.652);
+    border-radius: 10px;
+    padding-left: 40px;
+    margin: auto;
+    margin-top: 70px;
+    border: 1px solid rgba(250, 10, 10, 0.708);
+}
+
+.botao{
+    background-color:rgb(255, 134, 154);
+    color: aliceblue;
+    border: none;
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+}
+
+h1{
+    color:rgba(250, 10, 10, 0.708);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.botao:hover{
+    background-color: rgba(250, 10, 10, 0.708);
+    height: 50px;
+    width: 70px;
+    transition: 500ms;
+}

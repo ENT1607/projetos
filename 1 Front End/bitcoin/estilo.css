@@ -1,0 +1,50 @@
+body {
+    background-color: #3309b1;
+}
+
+.tabela{
+    border: 20px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding-left: 40px;
+    padding-top: 30px;
+    height: 600px;
+    margin: auto;
+    width: 500px;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.botao{
+    color: #ffffff;
+    background-color: #3309b1;
+    width: 60px;
+    border: 20px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.pesq{
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    height: 30px;
+    border-color: #3309b1;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img{
+    animation: rotacionar 5s infinite alternate;
+}
+@keyframes rotacionar{
+    0%{
+        transform: rotate3d(0,1,0, 0deg);
+    }
+    100%{
+        transform: rotate3d(0,1,0, 360deg);
+    }
+}
