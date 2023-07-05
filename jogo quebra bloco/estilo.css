@@ -10,6 +10,14 @@
     height: 600px;
     margin: 40px auto;
     background-color: black;
+    text-align: center;
+}
+
+#ponto{
+    color: green;
+    font-family: fantasy;
+    font-size: 30px;
+    margin: 0;
 }
 
 header{
@@ -18,4 +26,38 @@ header{
     height: 80px;
     color: rgb(255, 255, 255);
     background-color: rgb(255, 0, 0);
+}
+
+.gameover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: black;
+    display: none;
+}
+
+.mensagemGameover{
+    font-family: fantasy;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+    animation: piscar 4s alternate infinite;
+}
+
+@keyframes piscar {
+    0%{ color: rgb(255, 0, 0); }
+    100%{ columns: rgb(255, 255, 255); }
+}
+
+button{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
 }

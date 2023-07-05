@@ -4,7 +4,7 @@ var desenho = canvas.getContext("2d");
 
 //configurar raquete
 var raqueteAltura = 10;
-var raqueteLargura = 70;
+var raqueteLargura = 70; //70
 var raqueteX = (canvas.width - raqueteLargura) / 2; //centraliza raquete
 var velocidadeRaquete = 7;
 
@@ -13,17 +13,20 @@ var bolaRadius = 10;
 
 var bolaX = canvas.width / 2;
 var bolaY = canvas.height - 30;
-var bolaDX = 2;                  //direção de bola em x (esquerda/direita)
-var bolaDY = -2;                 //direção de bola em y (acima / abaixo)
+var bolaDX = 3;                  //direção de bola em x (esquerda/direita)
+var bolaDY = -3;                 //direção de bola em y (acima / abaixo)
 
-var tijolosPorLinha = 3 ; //3
+var tijolosPorLinha = 4 ; //3
 var tijolosPorColuna = 6; //6
-var tijoloLargura = 80; //75
-var tijoloAltura = 20;
+var tijoloLargura = 75; //75
+var tijoloAltura = 10;
 var tijoloEspacamento = 10;
 var espacamentoSuperiorQuadro = 30;
 var espacamentoEsquerdoQuadro = 30;
 var tijolos = []; //lista com os tijolos
+
+var totalPontuacao = tijolosPorLinha * tijolosPorColuna * 10;
+var pontuacao = 0;
 
 //dedicado apena a inicialização dos tijolos
 for(var coluna=0; coluna< tijolosPorColuna; coluna++ ){
@@ -110,24 +113,40 @@ function desenharTijolos(){
 
 function detectarColisao(){
     for(var coluna=0; coluna < tijolosPorColuna; coluna++){
-        for(var linha=0; linha <tijolosPorLinha; linha++){
+        for(var linha=0; linha < tijolosPorLinha; linha++){
 
             var tijolo = tijolos[coluna][linha];
 
             if(tijolo.ativo === 1){
 
-                if(bolaX > tijolo.x
-                     && bolaX < tijolo.x + tijoloLargura 
-                     && bolaY > tijolo.y
-                     && bolaY < tijolo.y + tijoloAltura){
+                if(bolaX + bolaRadius > tijolo.x
+                     && bolaX - bolaRadius < tijolo.x + tijoloLargura 
+                     && bolaY + bolaRadius > tijolo.y
+                     && bolaY - bolaRadius < tijolo.y + tijoloAltura){
                          bolaDY = -bolaDY;
                          tijolo.ativo = 0;
+                         tela = document.getElementById("ponto");
+                         pontuacao = pontuacao + 10;
+                         tela.innerHTML = "Score: " + pontuacao;
+
+                         if(pontuacao === totalPontuacao){
+                            window.location.reload();
+                         }
                      }
 
             }
 
         }
     }
+}
+
+function gameover(){
+    var gameover = document.getElementById("gameover");
+    gameover.style.display = "block";
+}
+
+function reiniciar(){
+    document.location.reload();
 }
 
 function desenhar(){
@@ -146,7 +165,7 @@ function desenhar(){
 
         bolaDY = -bolaDY; //inverte colisao ao bater em cima
 
-    } else if(bolaY + bolaDY > canvas.height - bolaRadius){
+    } else if(bolaY + bolaRadius + bolaDY > canvas.height - bolaRadius){
 
         //se for maior que o começo da raquete e menor que o final da raquete
         if(bolaX > raqueteX && bolaX < raqueteX + raqueteLargura){
@@ -154,7 +173,7 @@ function desenhar(){
             bolaDY = -bolaDY;           //inverte direção
         }else{
 
-            document.location.reload(); //reinicia
+            gameover(); //reinicia
         }
     }
 
