@@ -15,13 +15,29 @@
     <div class="painel">
         <canvas id="gameCanvas" width="600" height="400"></canvas>
         <p id="ponto">Score: 0</p>
+        <div class="botoes">
+            <button onclick="facil()">Fácil</button>
+            <button onclick="medio()">Médio</button>
+            <button onclick="dificil()">Dificil</button>
+            <button onclick="impossivel()">Impossivel</button>
+        </div>
+
     </div>
 
     <div class="gameover" id="gameover">
         <div class="mensagemGameover">
             GAME OVER!
             <br>
-            <button onclick="reiniciar()">Clique para jogar Novamente</button>
+            <button onclick="reiniciar()">Clique para Jogar Novamente</button>
+        </div>
+    </div>
+
+    <div class="vitoria" id="vitoria">
+        <img width="200px" src="https://static.vecteezy.com/system/resources/previews/019/023/677/original/gold-trophy-symbol-icon-png.png" alt="">
+        <div class="mensagemVitoria">
+            Parabéns, você ganhou!
+            <br>
+            <button onclick="reiniciar()">Clique para Jogar Novamente</button>
         </div>
     </div>
 

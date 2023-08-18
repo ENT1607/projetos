@@ -1,0 +1,26 @@
+body{
+    background-color: cornflowerblue;
+}
+
+.painel{
+    background-color: white;
+    width: 600px;
+    min-height: 400px;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding-top: 20px;
+}
+
+button{
+    background-color: cornflowerblue;
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+}
+
+label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
